@@ -10,4 +10,3 @@ age = 42
 ShoeSize = 11
 info = f"Hi I'm {name} I'm {age} years old and if you want to buy me a pair of shoes I wear an {11}"
 print(info)
-
