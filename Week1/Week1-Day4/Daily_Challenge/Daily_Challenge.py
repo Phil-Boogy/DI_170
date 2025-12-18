@@ -8,11 +8,11 @@
 # num = int(input("Give me a number: "))
 # num_length = int(input("give me another number: "))+1
 
-for i in range(num_length):
-    addThis = i*num
-    mult_table.append(addThis)
+# for i in range(num_length):
+#     addThis = i*num
+#     mult_table.append(addThis)
 
-print(mult_table)
+# print(mult_table)
 
 # Ask the user for a string.
 # 2. Write a program that processes the string to remove consecutive duplicate letters.
@@ -21,9 +21,11 @@ print(mult_table)
 # 3. The program should print the modified string.
 
 user_input = input("Give me a word: ")
-new_string = ""
+new_string = user_input [0]
 for i in range (1, len(user_input)):
-     if user_input[i] != user_input[i-1]:
-            new_string += user_input[i-1]
+    if user_input[i] != user_input[i-1]:
+            new_string += user_input[i]
+# if i == len(user_input) and user_input[i] != user_input[i-1]:
+#     new_string += user_input[i]
 
 print(new_string)
