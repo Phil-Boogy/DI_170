@@ -132,9 +132,13 @@ brooklyn_safari.add_animal("tiger", "lion", "elephant", "giraffe", "zebra", "bea
 # brooklyn_safari.get_groups()
 #print(brooklyn_safari.zoo_animals)
 brooklyn_safari.sell_animal("seal")
+<<<<<<< HEAD
 brooklyn_safari.get_groups()
 
     
 
     
     
+=======
+brooklyn_safari.get_groups()
+>>>>>>> f0cf7fe
