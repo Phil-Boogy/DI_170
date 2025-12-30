@@ -1,0 +1,11 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week2/Day2/ExerciseXP/ExcerciseXP.py
+suggestions for improvement:
+- In Exercise 4, the prompt asks that the function accepts a number as a parameter and then proceeds to generate a random number within the function, comparing the two. The code fulfills the requirements, but includes a superfluous conditional evaluating if the provided number falls within 1 and 100. This has been removed to improve performance.
+- In exercise 6, the provided initial code had some issues in the 'make_great' function. The magician_names list was re-assigned which is not the intended behavior. Ensure list modifications happen in-place or by creating a new list and returning it.
+- In exercise 7, the exercise description has two steps that print the message, and it is suggested that the message is printed only once
+Brief justification:
+- correctness: The code successfully implements the functionality described in each exercise. All exercises are completed correctly, including the use of functions, parameters, default values, random number generation, conditional statements, and list manipulation. Exercise 4 initially had some superfluous conditional statements. Exercise 6 was missing the final print function. Exercise 7 was only printing a statement, corrected to also return the result.
+- readability: The code is generally well-formatted and easy to read. Variable names are descriptive, and the code is properly indented. Including comments would be good practice.
+- performance: The code is efficient and performs the required tasks without any unnecessary overhead. The use of `f-strings` for string formatting is a good practice.
+- security: There are no apparent security concerns in the provided code. The code does not handle any external input or sensitive data.
+
