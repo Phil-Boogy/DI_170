@@ -1,0 +1,12 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week1/Week1-Day4/ExercisesXP/XPexercises.py
+suggestions for improvement:
+- In Exercise 1, the initial set `my_fav_numbers` is commented out, which means the `our_fav_numbers` set is created before `my_fav_numbers` is actually populated. Fix this by uncommenting the `my_fav_numbers` initialization and the additions to it.
+- In Exercise 6, the while loop condition should check if the username is NOT digits AND the length is less than 3. The current implementation will only run if it's digits, you have to make it a negative condition and an and statement
+- In Exercise 8, your topping list includes the 'quit' as the first value. It would be better to start with an empty list and append toppings in the loop.
+- In exercise 9, the age input is a string with potentially multiple values. The program then uses a list comprehension to convert them into integers. It will break if the user enters a non-integer value. Add exception handling
+Brief justification:
+- correctness: The code addresses all the exercises and their instructions. There are some minor errors with some of the logic that should be fixed (see feedback), but the program covers the content of the lessons. Exercise 1 has a set initialized but commented out. Exercise 6 has a mistake in the logic in the loop that continues to prompt for username. Ex 8 includes 'quit' as the topping, and 9 will break if the values are not integers. Otherwise, all other programs work.
+- readability: The code is well-organized and commented, making it easy to understand the purpose of each section. Using descriptive variable names further enhances readability.
+- performance: The code demonstrates good performance by using appropriate data structures and algorithms for each exercise. List comprehensions and built-in methods contribute to efficient execution.
+- security: The code includes basic input validation in Exercise 6 to prevent invalid usernames, which enhances security. There could be more security considerations in exercise 9
+
