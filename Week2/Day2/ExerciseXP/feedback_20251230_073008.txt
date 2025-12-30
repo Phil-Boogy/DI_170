@@ -1,0 +1,10 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week2/Day2/ExerciseXP/ExcerciseXP.py
+suggestions for improvement:
+- The provided code does not implement the Tic Tac Toe game as described in the chapter content. It consists of unrelated exercises covering basic Python functions, random numbers, and string manipulation.
+- To address the prompt, the code needs to be completely rewritten to implement the Tic Tac Toe game logic, including board representation, display, player input, win condition checking, tie game checking, and the main game loop.
+Brief justification:
+- correctness: The code is completely unrelated to the Tic Tac Toe game described in the chapter. Therefore, it scores 0% for correctness. It addresses different, simpler exercises not connected to the primary goal of creating a Tic Tac Toe game.
+- readability: N/A
+- performance: N/A
+- security: N/A
+
