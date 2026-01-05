@@ -1,0 +1,14 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week3/Day2/exercisesXP.py
+suggestions for improvement:
+- Exercise 3 is missing.
+- In the `Siamese` class, the `sing` method is not needed. You can just inherit from `Cat` without adding anything specific if there are no unique behaviors.
+- The code can be refactored to reduce redundant code (e.g., the `sing` method in `Bengal` and `Chartreux` is identical).
+Correctness: 80%
+-----
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week3/Day2/import.py
+suggestions for improvement:
+- In the `play` method, the output string should include the names of all dogs passed in `*args`, but currently only prints the name of the instance on which the method is called and the `args` tuple itself.
+- In the `play` method, the arguments *args are names of dog instances not strings. The code should reflect that.
+- Ensure that the `Dog` class is correctly imported from the `exercisesXP` file, and it has the attributes expected by the `PetDog` class (name, age, and weight). This was assumed but not explicitly verified.
+Correctness: 80%
+-----
