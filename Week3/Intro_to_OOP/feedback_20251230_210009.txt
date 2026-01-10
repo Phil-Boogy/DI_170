@@ -1,0 +1,11 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week3/Intro_to_OOP/Exercises.py
+suggestions for improvement:
+- In the Dog class, the methods should be consistently named (either camelCase or snake_case).
+- Consider adding docstrings to the classes and methods to explain their purpose and usage.
+- For sell_animal, you could provide a more informative message when trying to sell an animal that is not in the list.
+Brief justification:
+- correctness: The code correctly implements all four exercises as described in the chapter content, covering classes, objects, methods, attributes, and more. It creates the Cat, Dog, Song, and Zoo classes with the specified methods, instantiates objects, and performs the required operations.
+- readability: The code is mostly readable, with clear variable names and logical structure. However, some naming inconsistencies (e.g., 'Bark' vs. 'Jump' in the Dog class, 'Sing_a_song' in the Song class) could be improved.  Also, adding comments to explain complex logic would enhance readability.
+- performance: The code's performance is generally efficient. The algorithms used are appropriate for the scale of the problems addressed.  No major performance bottlenecks are apparent.
+- security: The code doesn't directly interact with external resources or user input in a way that would create significant security vulnerabilities. Input validation isn't a requirement in the exercise, so its absence is not a security concern.
+
