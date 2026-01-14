@@ -1,0 +1,10 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week1/Week1-Day2/ExerciseXP/ExercisesAll.py
+suggestions for improvement:
+- In Exercise 5, it's better to directly use the `shoe_size` variable instead of hardcoding the value 11 in the `info` string.
+- In Exercise 7, consider printing a more descriptive message like 'This number is even' or 'This number is odd' instead of just printing `True` or `False`.
+Brief justification:
+- correctness: All exercises are correctly implemented as per the instructions in the Chapter Content/Questions. The code accurately addresses each exercise's requirements, including printing, calculations, variable assignments, conditional statements, and user input.
+- readability: The code is generally well-readable, with clear variable names and comments for each exercise. However, some lines could be slightly improved for better clarity, such as using more descriptive messages in the output.
+- performance: The code's performance is efficient for the given tasks. No significant performance bottlenecks are apparent.
+- security: The code is relatively secure for the given exercises. It takes user input, but the input is used for simple calculations and comparisons without any risky operations.
+
