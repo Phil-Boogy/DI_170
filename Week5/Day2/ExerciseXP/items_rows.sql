@@ -1,0 +1,1 @@
+INSERT INTO "public"."items" ("item_id", "price", "description") VALUES ('1', '100', 'Small Desk'), ('2', '300', 'Large Desk'), ('3', '80', 'Fan');
