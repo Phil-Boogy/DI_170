@@ -1,0 +1,20 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week4/Day1/Anagram_checker.py
+suggestions for improvement:
+- Consider using a set for `self.word_list` to improve the `is_valid_word` method's performance.
+- The file path is hardcoded. It might be better to pass it as an argument to the constructor to allow for more flexibility.
+Correctness: 100%
+-----
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week4/Day1/anagrams.py
+suggestions for improvement:
+- Consider adding more comprehensive error handling, such as handling file not found exceptions during AnagramChecker initialization.
+- For better readability, you can separate the menu options into constants.
+Correctness: 100%
+-----
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week4/Day1/words.txt
+suggestions for improvement:
+- This code represents data for the word list file. It needs to be assessed within the context of the complete `anagram_checker.py` file, which is missing.
+- Without the surrounding code to load and process the data provided, this snippet cannot be evaluated on its own.
+- This is just a text file containing a list of English words. It does not implement any of the required functionalities as outlined in the instructions (creating classes, methods for anagram checking, UI, etc.)
+- Since this code part is supposed to contribute to the implementation of the AnagramChecker class and related UI, its current form is unusable and needs to be replaced with actual code.
+Correctness: 0.0%
+-----

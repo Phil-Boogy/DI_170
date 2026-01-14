@@ -1,0 +1,12 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week1/Week1-Day4/Daily_Challenge/Daily_Challenge.py
+suggestions for improvement:
+- In Challenge 1, the list includes '0' as the first element, which is not in the desired output in the examples. Modify the range to start from 1.
+- In Challenge 1, the variable 'mult_table' is used before it's defined. Define it before the for loop.
+- In Challenge 2, the last character of the user input is not included in the result. Handle this case to ensure that the last character is added if it's not a duplicate of the second to last character.
+- Consider adding input validation to check for valid integer and string inputs.
+Brief justification:
+- correctness: Challenge 1 is mostly correct, generating multiples of a number up to a given length, but it includes 0 as the first element and has a scope issue. Challenge 2 removes consecutive duplicates, but it misses the last character. Thus, the overall correctness is 70%.
+- readability: The code is generally readable, using descriptive variable names and clear comments. However, the lack of initial definition for `mult_table` in Challenge 1 slightly reduces readability. Readability is scored at 70%.
+- performance: The code uses simple loops and string operations, which are reasonably efficient for the given tasks. There are no obvious performance bottlenecks. Therefore, performance is rated at 80%.
+- security: The code uses the `input()` function, which can be a potential security risk if the input is not sanitized. However, in this context, the risk is minimal as the input is used for basic arithmetic and string manipulation. The code's security is rated at 90%.
+
