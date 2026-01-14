@@ -1,0 +1,9 @@
+URL: https://github.com/Phil-Boogy/DI_170/blob/main/Week5/Day2/ExerciseXP/customer_rows.sql
+suggestions for improvement:
+- The provided SQL statement only inserts data into the 'customers' table. It doesn't create the database or the tables as requested in Exercise 1. It also doesn't add items to the 'items' table or perform any data retrieval. Therefore, it only partially addresses the requirements.
+Brief justification:
+- correctness: The code only performs the data insertion part of Exercise 1, and does not create the database and the tables as requested in the instructions. Therefore, the correctness is 0%.
+- readability: N/A
+- performance: N/A
+- security: N/A
+
