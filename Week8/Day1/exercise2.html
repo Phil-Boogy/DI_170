@@ -1,0 +1,19 @@
+<html>
+
+<button id="jsstyle">Style</button>
+
+<script>
+    let x = document.getElementById("jsstyle");
+    x.addEventListener("mouseover", RespondMouseOver);
+    x.addEventListener("click", RespondClick);
+
+    function RespondMouseOver() {
+        x.style.backgroundColor = "blue";
+    }
+
+    function RespondClick() {
+        x.style.fontWeight = "bold";
+    }
+</script>
+
+</html>

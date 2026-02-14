@@ -1,0 +1,18 @@
+<html>
+
+<div id="outer">
+    <button id="inner">Click</button>
+</div>
+
+<script>
+    const outer = document.getElementById("outer");
+    const inner = document.getElementById("inner");
+
+    // With true - runs during capturing (outer fires FIRST)
+    outer.addEventListener("click", () => console.log("Outer"), false);
+    inner.addEventListener("click", () => console.log("Inner"), false);
+
+    // Output when clicking button: "Outer" then "Inner"
+</script>
+
+</html>

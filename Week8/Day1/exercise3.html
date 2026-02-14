@@ -1,0 +1,37 @@
+<html>
+<div>
+    <button id="jsstyle">Style</button>
+</div>
+
+<script>
+    const divs = document.querySelector('div');
+    const buttons = document.getElementById("jsstyle");
+
+    divs.addEventListener("click", DivsClickRespond);
+    buttons.addEventListener("click", ButtonsClickRespond);
+    buttons.addEventListener("mouseover", ButtonsMouseOverRespond);
+    buttons.addEventListener("mouseout", ButtonsMouseOutRespond);
+
+
+    function ButtonsClickRespond(e) {
+        buttons.style.border = "2px solid blue";
+        console.log("Button's been clicked")
+        e.stopPropagation()
+    }
+
+    function ButtonsMouseOverRespond(e) {
+        buttons.style.backgroundColor = "lightblue";
+    }
+
+    function ButtonsMouseOutRespond(e) {
+        buttons.style.border = "none";
+        buttons.style.backgroundColor = "";
+    }
+
+    function DivsClickRespond(e) {
+        console.log("Your click woke this div up")
+    }
+
+</script>
+
+</html>
