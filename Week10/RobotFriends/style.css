@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap');
+
+:root {
+    --bg: #0e0e0e;
+    --surface: #161616;
+    --card-bg: #1c1c1c;
+    --border: #2a2a2a;
+    --accent: #c8f500;
+    --text-primary: #f0f0f0;
+    --text-secondary: #666;
+    --card-hover: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+}
+
+/* ── HEADER ── */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.2rem 2.5rem;
+}
+
+#header::before {
+    content: 'ROBOFRIENDS';
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+#friendSearch {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 0;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#friendSearch::placeholder {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+}
+
+#friendSearch:focus {
+    border-bottom-color: var(--accent);
+}
+
+/* ── CARD GRID ── */
+#cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1px;
+    padding: 1px;
+    background-color: var(--border);
+}
+
+/* ── ROBOT CARD ── */
+.robotCard {
+    background-color: var(--card-bg);
+    padding: 2rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: default;
+    transition: background-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.robotCard::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.robotCard:hover {
+    background-color: var(--card-hover);
+}
+
+.robotCard:hover::after {
+    width: 100%;
+}
+
+.robotCard img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #111;
+    border: 1px solid var(--border);
+    filter: grayscale(20%);
+    transition: filter 0.3s;
+}
+
+.robotCard:hover img {
+    filter: grayscale(0%) drop-shadow(0 0 12px rgba(200, 245, 0, 0.3));
+}
+
+.robotCard h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.robotCard p {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+/* ── EMPTY STATE ── */
+#cardContainer:empty::after {
+    content: 'NO UNITS FOUND';
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    color: var(--border);
+    padding: 4rem;
+    grid-column: 1 / -1;
+    text-align: center;
+}
