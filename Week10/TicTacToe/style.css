@@ -1,0 +1,105 @@
+body {
+    background-color: #1a1a1a;
+    color: #d4af37;
+    text-align: center;
+    font-family: "Kings", cursive;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 22px;
+    margin: 15px 0 8px;
+}
+
+.symbol-buttons,
+#modeButtons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    background: #1a1a1a;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    padding: 8px 24px;
+    font-family: "Kings", cursive;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d4af37;
+    color: #1a1a1a;
+}
+
+button.selected {
+    background: #d4af37;
+    color: #1a1a1a;
+}
+
+.board-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    color: #d4af37;
+    border: 4px solid #d4af37;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Kings", cursive;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #2a2a2a;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+#message,
+#chooseSymbol {
+    font-size: 32px;
+    margin-top: 24px;
+    min-height: 40px;
+}
+
+#restartBtn,
+#gotIt {
+    margin-top: 16px;
+    font-size: 20px;
+}

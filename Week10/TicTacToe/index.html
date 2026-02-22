@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gothic Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gothic Tic Tac Toe</h1>
+        <h2>Vanilla JS Style</h2>
+        <p>Choose your weapon</p>
+        <div class="symbol-buttons">
+            <button id='x'>X</button>
+            <button id='o'>O</button>
+        </div>
+        <p>Choose your opponent</p>
+        <div id="modeButtons">
+            <button id="easy">Easy</button>
+            <button id="hard">Hard</button>
+        </div>
+        <div id="chooseSymbol"></div>
+        <button id="gotIt" style="display:none" onclick="disappear()">I shall</button>
+    </div>
+
+    <div class="board-container">
+        <table class="board">
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="message"></div>
+    <button id="restartBtn" style="display:none" onclick="restartGame()">Play Again</button>
+
+</body>
+
+</html>
