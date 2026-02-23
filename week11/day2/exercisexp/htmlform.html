@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="myform" name="my" action="htmlform.html" method="POST">
+        <label for=" name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Jane Jones"><br><br>
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50">Leave your comments here
+            </textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- on submit the form data will appear in the url when method="GET" -->
+    <!-- on submit the form data will appear in the payload of the post request when method="POST" -->
+
+</body>
+
+</html>
