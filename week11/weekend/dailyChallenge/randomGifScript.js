@@ -6,7 +6,7 @@ button.addEventListener("click", async (event) => {
     event.preventDefault();
     const searchTerm = document.querySelector("#gif-search").value;
 
-    const url = `https://api.giphy.com/v1/gifs/random?tag=${searchTerm}&api_key=FkhLnRQ2XRqEoowVzc7d2cZejLmIE0Zc`;
+    const url = `https://api.giphy.com/v1/gifs/random?tag=${searchTerm}&api_key=FhpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`;
 
     try {
         const response = await fetch(url);
