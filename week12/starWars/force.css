@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow: #FFE000;
+    --bg: #000;
+    --text: #fff;
+    --dim: rgba(255, 224, 0, 0.5);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.card {
+    width: 560px;
+    height: 260px;
+    border: 2px solid var(--yellow);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.card-empty span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80px;
+    color: var(--dim);
+    user-select: none;
+}
+
+.card-content {
+    padding: 36px 48px;
+    width: 100%;
+}
+
+.card-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    color: var(--yellow);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-content li {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.label {
+    color: var(--dim);
+    width: 90px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.card-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-loader i {
+    font-size: 40px;
+    color: var(--yellow);
+    --fa-animation-duration: 0.8s;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    background: var(--yellow);
+    color: var(--bg);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW Character Finder</title>
+    <link rel="stylesheet" href="force.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="card" id="card">
+            <div class="card-empty" id="card-empty">
+                <span>?</span>
+            </div>
+            <div class="card-loader hidden" id="card-loader">
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+            </div>
+            <div class="card-content hidden" id="card-content">
+                <h1 id="char-name"></h1>
+                <ul>
+                    <li><span class="label">Height: </span><span id="char-height"></span></li>
+                    <li><span class="label">Gender: </span><span id="char-gender"></span></li>
+                    <li><span class="label">Year of birth: </span><span id="char-birth"></span></li>
+                    <li><span class="label">Home planet: </span><span id="char-homeworld"></span></li>
+                </ul>
+            </div>
+        </div>
+        <button id="btn">Find Someone</button>
+    </main>
+    <script src="force.js"></script>
+</body>
+
+</html>
