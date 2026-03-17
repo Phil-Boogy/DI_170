@@ -1,0 +1,1 @@
+export const people = [{ name: 'Philip', age: 120, location: 'Tel Aviv, Il' }, { name: 'Nuri', age: 35, location: 'New York, USA' }, { name: 'Bobby', age: 32, location: 'London, GB' }];
