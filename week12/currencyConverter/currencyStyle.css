@@ -1,0 +1,10 @@
+#results1 div,
+#results2 div {
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+#results1 div:hover,
+#results2 div:hover {
+    background-color: #eee;
+}
