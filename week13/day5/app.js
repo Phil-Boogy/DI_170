@@ -2,12 +2,6 @@ import knex from "knex";
 import { Pool } from 'pg'
 import 'dotenv/config';
 
-const PGHOST = 'ep-winter-lake-a4ww8cyf-pooler.us-east-1.aws.neon.tech'
-const PGDATABASE = 'neondb'
-const PGUSER = 'neondb_owner'
-const PGPASSWORD = 'npg_kpuZW7XmO6xJ'
-const PGPORT = 5432
-
 const db = knex({
     client: 'pg',
     connection: {
