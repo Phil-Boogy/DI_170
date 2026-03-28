@@ -1,4 +1,3 @@
-import { log } from "node:console";
 import { getAllExpenses, createNewExpense, editExpense, deleteExpense } from "../models/expenses.js";
 
 export const getExpenses = async (req, res) => {
