@@ -10,7 +10,7 @@ export const getAllIncomes = () => {
 
 export const createNewIncome = (category_id, description, amount) => {
     return pool.query(
-        `insert into income (category_id, description, amount)values ($1, $2, $3) returning *`, [category_id, description, amount],
+        `insert into income (category_id, description, amount)values ($1, $2, $3) returning *`, [category_id, description, amount]
     );
 };
 
