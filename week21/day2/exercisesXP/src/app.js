@@ -37,34 +37,6 @@ const createPerson = (name, age) => {
 const newPerson = createPerson("Philip", 89);
 console.log(newPerson);
 // 🌟 Exercise 7: Type Assertions
-// const input = document.getElementById("myInput") as HTMLInputElement;
-// input.value = "hello";
-// 🌟 Exercise 8: switch Statement with Complex Conditions
-const getAction = (role) => {
-    switch (role) {
-        case "admin":
-            return "Manage users and settings";
-        case "editor":
-            return "Edit content";
-        case "viewer":
-            return "View content";
-        case "guest":
-            return "Limited access";
-        default:
-            return "Invalid role";
-    }
-};
-const action = getAction("admin");
-console.log(action);
-function greet(name) {
-    if (name) {
-        return `Hello ${name}`;
-    }
-    else {
-        return "Hello stranger";
-    }
-}
-const greeting = greet("Albert");
-console.log(greeting);
-const stranger = greet();
-console.log(stranger);
+const input = document.getElementById("myInput");
+input.value = "hello";
+
