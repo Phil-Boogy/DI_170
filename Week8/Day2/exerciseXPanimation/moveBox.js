@@ -13,7 +13,6 @@ function myMove() {
         box.style.left = pos + 'px';
         if (pos >= 350) {
             clearInterval(move);
-            pos = 0;
         }
     }, 1);
 }
